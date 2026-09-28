@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festa de Halloween · Estàs convidat</title>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#2d0a5e;--mid:#431180;--lime:#a8d63a;--violet:#8b6ee6;--pink:#f43fd0;--gold:#ffb633;--bone:#fdf0e0;--ink:#1e0a3c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:radial-gradient(ellipse at 20% 0%,var(--mid),var(--night) 70%);color:var(--bone);font-family:'Raleway',system-ui,sans-serif;overflow-x:hidden}
+.stars i{position:fixed;width:6px;height:6px;border-radius:50%;background:#fff;opacity:.7;animation:tw 3s infinite ease-in-out}
+@keyframes tw{50%{opacity:.15}}
+main{max-width:920px;margin:0 auto;padding:32px 22px 60px;display:grid;gap:28px;grid-template-columns:1.2fr 1fr;align-items:center;min-height:100vh}
+h1{font-family:'Creepster','Chalkduster',fantasy;font-weight:400;margin:0;line-height:.95;font-size:clamp(3rem,10vw,5.6rem);color:var(--lime);letter-spacing:.02em;text-shadow:0 4px 0 rgba(0,0,0,.25)}
+h1 span{display:block;color:var(--violet)}
+.pill{display:inline-block;background:var(--lime);color:var(--ink);font-weight:700;border-radius:999px;padding:12px 24px;margin:20px 0 6px;box-shadow:0 5px 0 #7aa321}
+.datos{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:1.1rem}
+.datos b{color:var(--gold)}
+.ghost{width:100%;max-width:340px;justify-self:center;animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px)}}
+.rsvp{grid-column:1/-1;text-align:center;padding-top:6px}
+.rsvp h2{font-family:'Creepster',fantasy;font-weight:400;font-size:2rem;margin:0 0 16px;color:var(--bone)}
+.actions{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;min-height:64px}
+button{font:700 1.15rem 'Raleway',sans-serif;border:0;border-radius:999px;padding:16px 34px;cursor:pointer;transition:transform .15s}
+#yes{background:var(--lime);color:var(--ink);box-shadow:0 6px 0 #7aa321}
+#yes:hover{transform:translateY(-2px) rotate(-2deg)}
+#yes:active{transform:translateY(4px);box-shadow:0 2px 0 #7aa321}
+#no{background:var(--pink);color:#fff;box-shadow:0 6px 0 #a3157f;z-index:20;transition:left .25s cubic-bezier(.3,1.6,.5,1),top .25s cubic-bezier(.3,1.6,.5,1)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.firma{grid-column:1/-1;text-align:center;margin:0;font-family:'Creepster',fantasy;font-size:1.6rem;color:var(--violet)}
+.firma small{display:block;margin-top:4px;font-family:'Raleway',sans-serif;font-weight:700;font-size:.95rem;color:var(--bone);opacity:.8}
+.wa{display:inline-block;margin-top:8px;background:#25d366;color:var(--ink);font-weight:700;text-decoration:none;border-radius:999px;padding:14px 28px;box-shadow:0 6px 0 #178a44}
+.wa:hover{transform:translateY(-2px)}
+.wa:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+#msg{min-height:1.6em;margin:18px 0 0;color:var(--gold);font-weight:700}
+#ok{display:none}
+#ok h2{color:var(--lime);font-size:2.6rem}
+.burst{position:fixed;left:50%;top:60%;font-size:26px;pointer-events:none;z-index:30;animation:fly 1.3s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(360deg);opacity:0}}
+@media(max-width:700px){main{grid-template-columns:1fr;text-align:center}.ghost{max-width:220px;order:-1}.datos{justify-items:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<main>
+  <section>
+    <h1>Estàs convidat a la festa de Halloween <span>més guai del món</span></h1>
+    <div class="pill">Qui no vingui disfrassat no entrarà!</div>
+    <ul class="datos">
+      <li><b>Quan:</b> dia 31 a partir de les 21:00 (hora ajustable a quan l'Andrea estigui preparada)</li>
+      <li><b>On:</b> t'enviarem els detalls amb la ubicació ;)</li>
+    </ul>
+  </section>
+
+  <svg class="ghost" viewBox="0 0 300 340" role="img" aria-label="Fantasma somrient amb un calder">
+    <path d="M70 20c40-30 110-10 110 60 0 30-10 45-10 70H90c-10-30-50-40-50-80 0-25 10-40 30-50z" fill="#fdf0e0"/>
+    <ellipse cx="102" cy="72" rx="9" ry="14" fill="#2d0a5e"/><ellipse cx="140" cy="72" rx="9" ry="14" fill="#2d0a5e"/>
+    <path d="M112 96q10 10 20 0" stroke="#2d0a5e" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M190 190c-20-60 10-100 50-90 20 5 30 20 25 35-10-20-40-20-45 10-3 20 5 45 5 45z" fill="#a8d63a"/>
+    <path d="M60 210h180c0 60-30 100-90 100S60 270 60 210z" fill="#f43fd0"/>
+    <ellipse cx="150" cy="210" rx="90" ry="16" fill="#a8d63a"/>
+    <circle cx="150" cy="262" r="22" fill="#8b6ee6"/><circle cx="141" cy="258" r="5" fill="#f43fd0"/><circle cx="159" cy="258" r="5" fill="#f43fd0"/>
+    <path d="M40 320h220" stroke="#a8d63a" stroke-width="10" stroke-linecap="round"/>
+  </svg>
+
+  <section class="rsvp" id="rsvp">
+    <div id="ask">
+      <h2>Comptem amb tu?</h2>
+      <div class="actions">
+        <button id="yes">Vinc!</button>
+        <button id="no">No vinc</button>
+      </div>
+      <p id="msg" aria-live="polite"></p>
+    </div>
+    <div id="ok"><h2>Perfecte, sabíem que erets guai</h2><p>Ves pensant en la disfressa. Hi haurà pocions.</p>
+      <a id="wa" class="wa" href="#" target="_blank" rel="noopener">Avisa'ns per WhatsApp</a></div>
+  </section>
+  <p class="firma">Andrea i Thais<small>la dupla de l'amor</small></p>
+</main>
+
+<script>
+(function(){
+  var st=document.querySelector('.stars');
+  for(var i=0;i<28;i++){var s=document.createElement('i');s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*3)+'s';st.appendChild(s);}
+
+  // Número de WhatsApp de contacte (format internacional, sense + ni espais). Ex: '34600123456'. Buit = tria el contacte.
+  var PHONE='34644881506';
+  var txt=encodeURIComponent("Hola Andrea i Thais! Compteu amb mi a la festa de Halloween 🎃 Vinc!");
+  document.getElementById('wa').href='https://wa.me/'+PHONE+'?text='+txt;
+
+  var yes=document.getElementById('yes'),no=document.getElementById('no'),msg=document.getElementById('msg');
+  var lines=['Sóc un pringat/pringada (no discriminem)','Ups, s\'ha escapat…','Aquest botó està embruixat','Gairebé el pesques','Els fantasmes no accepten un no','Millor prem «Vinc!»'];
+  var n=0,px=-999,py=-999;
+
+  function dodge(){
+    var w=innerWidth,h=innerHeight,bw=no.offsetWidth,bh=no.offsetHeight,y=yes.getBoundingClientRect(),x0,y0,ok=false;
+    no.style.position='fixed';
+    for(var t=0;t<40&&!ok;t++){
+      x0=8+Math.random()*(w-bw-16);y0=8+Math.random()*(h-bh-16);
+      var far=Math.hypot(x0+bw/2-px,y0+bh/2-py)>140;
+      var free=x0>y.right+10||x0+bw<y.left-10||y0>y.bottom+10||y0+bh<y.top-10;
+      ok=far&&free;
+    }
+    no.style.left=x0+'px';no.style.top=y0+'px';
+    msg.textContent=lines[n++%lines.length];
+  }
+  ['pointerenter','pointerdown','touchstart','focus'].forEach(function(ev){
+    no.addEventListener(ev,function(e){if(e.cancelable)e.preventDefault();if(e.clientX!==undefined){px=e.clientX;py=e.clientY;}dodge();},{passive:false});
+  });
+  no.addEventListener('click',function(e){e.preventDefault();dodge();});
+  document.addEventListener('pointermove',function(e){
+    px=e.clientX;py=e.clientY;
+    if(no.style.position==='fixed'||true){
+      var r=no.getBoundingClientRect();
+      if(Math.hypot(px-(r.left+r.width/2),py-(r.top+r.height/2))<r.width/2+45)dodge();
+    }
+  });
+
+  yes.addEventListener('click',function(){
+    no.style.display='none';
+    document.getElementById('ask').style.display='none';
+    document.getElementById('ok').style.display='block';
+    var em=['🎃','👻','⭐','🦇','🍬','🕸️'];
+    for(var i=0;i<30;i++){
+      var b=document.createElement('span');b.className='burst';b.textContent=em[i%em.length];
+      b.style.setProperty('--x',(Math.random()*700-350)+'px');b.style.setProperty('--y',(Math.random()*-600-50)+'px');
+      document.body.appendChild(b);setTimeout(function(el){el.remove();}.bind(null,b),1400);
+    }
+  });
+})();
+</script>
+</body>
+</html>
+
